@@ -1,2 +1,2 @@
-print hello payton
-print 'Programming is like building a multilingual puzzle'
+print ('hello world')
+print ('Programming is like building a multilingual puzzle')
