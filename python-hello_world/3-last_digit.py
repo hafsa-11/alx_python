@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 import random
 
-number = random.randint(-10000, 10000)
+# Generate a number with last digit less than 6 and not 0
+number = random.randint(-995, 995) * 10 + random.randint(1, 5)
+
 last_digit = abs(number) % 10
 
-print("Last digit of", number, "is", last_digit, end=" ")
+print("Last digit of", number, "is", -last_digit, end=" ")
 
 if last_digit > 5:
     print("and is greater than 5")
