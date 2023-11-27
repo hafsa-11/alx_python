@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 import random
 
-# Generate a number with last digit less than 6 and not 0
-number = random.randint(-995, 995) * 10 + random.randint(1, 5)
-
+number = random.randint(-10000, 10000)
 last_digit = abs(number) % 10
 
 print("Last digit of", number, "is", -last_digit, end=" ")
