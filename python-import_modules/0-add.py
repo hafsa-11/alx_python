@@ -6,6 +6,6 @@ b = 2
 
 print("{} + {} = {}".format(a, b, add(a, b)))
 
-
+# Add the following lines to ensure the code is not executed when imported
 if _name_ == "_main_":
     pass
