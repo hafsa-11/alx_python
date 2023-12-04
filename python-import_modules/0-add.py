@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-from add_0 import add
+# add_0.py file content
+# def add(a, b):
+#     return a + b
 
-a = 1
-b = 2
-
-print("{} + {} = {}".format(a, b, add(a, b)))
-
-# Add the following lines to ensure the code is not executed when imported
+# main program
 if _name_ == "_main_":
-    pass
+    a = 1
+    b = 2
+    from add_0 import add
+
+    result = add(a, b)
+    print("{} + {} = {}".format(a, b, result))
