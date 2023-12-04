@@ -12,9 +12,7 @@ def no_c(my_string):
         if char.lower() != 'c':
             result += char
     return result
-
-# Test the function with the provided examples
 print(no_c("Holberton School"))
 print(no_c("Chicago"))
 print(no_c("C is fun!"))
-print(no_c("School"))  # Additional test case
+print(no_c("School"))  
