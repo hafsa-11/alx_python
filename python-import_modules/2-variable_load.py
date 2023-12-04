@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from variable_load_2 import a
-
-if _name_ == "_main_":
+if __name__ == "__main__":
+    from variable_load_2 import a
     print(a)
