@@ -32,4 +32,16 @@ class Square:
         - int: The area of the square.
         """
         return self.__size ** 2
-    
+
+
+# Test case 1
+mysquare = Square(3)
+print("{}".format(mysquare.area()))  # Output: 9
+
+# Test case 2
+mysquare = Square(89)
+print("{}".format(mysquare.area()))  # Output: 7921
+
+# Test case 3
+mysquare = Square()
+print("{}".format(mysquare.area()))  # Output: 0
