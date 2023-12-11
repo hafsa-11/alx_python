@@ -1,9 +1,3 @@
-#!/usr/bin/python3
-Square = _import_('2-square').Square
-
-my_square = Square(3)
-print("{}".format(my_square.area()))
-
 """
 Module: 2-square
 
@@ -38,3 +32,7 @@ class Square:
         - int: The area of the square.
         """
         return self.__size ** 2
+    Square = _import_('2-square').Square
+
+my_square = Square(3)
+print("{}".format(my_square.area()))
