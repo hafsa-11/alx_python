@@ -2,7 +2,7 @@
 2-square.py - a module that defines the Square class
 """
 
-class Square:
+class Square: //
     """
     This class represents a square.
 
