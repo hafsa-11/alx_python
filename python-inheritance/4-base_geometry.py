@@ -10,6 +10,7 @@ class BaseGeometry:
         raise Exception("area() is not implemented")
 
 # Example usage
+BaseGeometry = __import__('4-base_geometry').BaseGeometry
 bg = BaseGeometry()
 
 try:
