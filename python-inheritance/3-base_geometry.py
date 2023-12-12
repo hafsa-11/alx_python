@@ -2,7 +2,6 @@
 This module provides a base geometry class.
 """
 
-#!/usr/bin/python3
 
 class BaseGeometry:
    def __dir__(self):
