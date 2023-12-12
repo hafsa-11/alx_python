@@ -7,12 +7,12 @@ class BaseGeometry:
     An empty class representing base geometry.
     """
 
-    def __dir__(self):
+    def __str__(self):
         """
-        Override the __dir__ method to exclude the default attributes and methods.
+        Override the __str__ method to customize the string representation.
         """
-        return []
+        return "BaseGeometry()"
 
 # Example usage
 bg = BaseGeometry()
-print(dir(bg))
+print(bg)
