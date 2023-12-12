@@ -7,11 +7,11 @@ class BaseGeometry:
     An empty class representing base geometry.
     """
 
-    def __str__(self):
+    def __repr__(self):
         """
-        Override the __str__ method to customize the string representation.
+        Override the __repr__ method to customize the representation.
         """
-        return "BaseGeometry()"
+        return "<{} object at {}>".format(self.__class__.__name__, hex(id(self)))
 
 # Example usage
 bg = BaseGeometry()
