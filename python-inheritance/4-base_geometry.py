@@ -9,12 +9,6 @@ class BaseGeometry:
         """
         raise Exception("area() is not implemented")
 
-    def __dir__(self):
-        """
-        Override the __dir__ method to include the 'area' method in the dir output.
-        """
-        return ['__doc__', '__module__', 'area']
-
 # Example usage
 bg = BaseGeometry()
 print(dir(bg))
