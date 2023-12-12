@@ -4,7 +4,8 @@ This module provides a base geometry class.
 
 #!/usr/bin/python3
 
-class BaseGeometry:__import__('3-base_geometry').BaseGeometry
+class BaseGeometry:
+    pass
 
 
 bg = BaseGeometry()
