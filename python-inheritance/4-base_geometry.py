@@ -9,11 +9,14 @@ class BaseGeometry:
         """
         raise Exception("area() is not implemented")
 
-# Example usage
-BaseGeometry = __import__('4-base_geometry').BaseGeometry
-bg = BaseGeometry()
-
 try:
-    print(bg.area())
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+    BaseGeometry = __import__('4-base_geometry').BaseGeometry
+
+    bg = BaseGeometry()
+
+    try:
+        print(bg.area())
+    except Exception as e:
+        print("[{}] {}".format(e.__class__.__name__, e))
+except ImportError:
+    print("Error importing BaseGeometry from '4-base_geometry'")
