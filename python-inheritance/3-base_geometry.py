@@ -3,9 +3,8 @@ This module provides a base geometry class.
 """
 
 
-class BaseGeometry:
-   def __dir__(self):
-        return []
+class BaseGeometry:BaseGeometry = __import__('3-base_geometry').BaseGeometry
+
 
 bg = BaseGeometry()
 
