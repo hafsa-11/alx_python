@@ -7,8 +7,7 @@ class BaseGeometry:
     An empty class representing base geometry.
     """
 
-    @classmethod
-    def __dir__(cls):
+    def __dir__(self):
         """
         Override the __dir__ method to exclude the default attributes and methods.
         """
@@ -17,4 +16,3 @@ class BaseGeometry:
 # Example usage
 bg = BaseGeometry()
 print(dir(bg))
-print(dir(BaseGeometry))
