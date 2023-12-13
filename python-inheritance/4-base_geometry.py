@@ -28,7 +28,5 @@ if __name__ == "__main__":
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
  
-        BaseGeometry = __import__('4-base_geometry').BaseGeometry
-
-bg = BaseGeometry()
-print(dir(bg))
+        
+    
