@@ -10,10 +10,8 @@ class BaseGeometry:
     It is currently empty and intended for further development.
     """
     
-bg = BaseGeometry()
-print(bg)
+pass
 bg = BaseGeometry()
 print(dir(bg))
 
 print(dir(BaseGeometry))
-pass
