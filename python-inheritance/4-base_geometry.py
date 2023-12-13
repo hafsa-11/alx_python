@@ -27,10 +27,8 @@ if __name__ == "__main__":
         print(bg.area())
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
+ 
+        BaseGeometry = __import__('4-base_geometry').BaseGeometry
 
-        raise Exception("area() is not implemented")
-
-if __name__ == "__main__":
-    bg = BaseGeometry()
-
-    print(dir(bg))
+bg = BaseGeometry()
+print(dir(bg))
