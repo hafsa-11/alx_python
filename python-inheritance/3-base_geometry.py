@@ -12,5 +12,7 @@ class BaseGeometry:
     pass
 bg = BaseGeometry()
 print(bg)
+bg = BaseGeometry()
 print(dir(bg))
+bg = BaseGeometry()
 print(dir(BaseGeometry))
