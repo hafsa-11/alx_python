@@ -10,3 +10,7 @@ class BaseGeometry:
     It is currently empty and intended for further development.
     """
     pass
+bg = BaseGeometry()
+
+print(dir(bg))
+print(dir(BaseGeometry))
