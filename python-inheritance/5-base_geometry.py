@@ -8,7 +8,6 @@ class BaseGeometry:
 
     This class serves as the base class for geometry-related classes.
     """
-
     def area(self):
         """Public instance method that raises an Exception.
 
@@ -56,8 +55,4 @@ if __name__ == "__main__":
         bg.integer_validator("distance", -4)
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
-        #!/usr/bin/python3
-BaseGeometry = __import__('5-base_geometry').BaseGeometry
-
-bg = BaseGeometry()
-print(dir(bg))
+        
