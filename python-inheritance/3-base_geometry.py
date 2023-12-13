@@ -15,6 +15,9 @@ bg = BaseGeometry()
 # Correct output - case: bg = BaseGeometry() print(bg)
 print(bg)
 
+bg = BaseGeometry()
+
+
 # Correct output - case: bg = BaseGeometry() print(dir(bg))
 print(dir(bg))
 
