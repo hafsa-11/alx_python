@@ -1,15 +1,12 @@
-"""
-This module provides a base geometry class.
+"""3-base_geometry module
+
+This module defines the BaseGeometry class.
 """
 
+class BaseGeometry:
+    """Empty BaseGeometry class
 
-class BaseGeometry=
+    This class serves as the base class for geometry-related classes.
+    It is currently empty and intended for further development.
+    """
     pass
-
-bg = BaseGeometry()
-BaseGeometry = __import__('3-base_geometry').BaseGeometry
-
-
-print(bg)
-print(dir(bg))
-print(dir(BaseGeometry))
