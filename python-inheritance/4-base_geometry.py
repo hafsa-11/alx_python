@@ -27,7 +27,10 @@ if __name__ == "__main__":
         print(bg.area())
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
-        bg = BaseGeometry()
 
-    # Correct output - case: bg = BaseGeometry() print(dir(bg))
+        raise Exception("area() is not implemented")
+
+if __name__ == "__main__":
+    bg = BaseGeometry()
+
     print(dir(bg))
