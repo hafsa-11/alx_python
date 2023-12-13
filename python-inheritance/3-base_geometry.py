@@ -9,10 +9,11 @@ class BaseGeometry:
     This class serves as the base class for geometry-related classes.
     It is currently empty and intended for further development.
     """
-    pass
+    
 bg = BaseGeometry()
 print(bg)
 bg = BaseGeometry()
 print(dir(bg))
 
 print(dir(BaseGeometry))
+pass
