@@ -1,26 +1,23 @@
-#!/usr/bin/python3
-"""
-Script that takes in a URL, sends a request to the URL,
-and displays the body of the response.
-If the HTTP status code is greater than or equal to 400,
-prints: Error code: followed by the value of the HTTP status code.
-"""
-
 import requests
 import sys
 
+def search_user(letter):
+    url = "http://0.0.0.0:5000/search_user"
+    params = {'q': letter}
+
+    response = requests.post(url, data=params)
+    
+    try:
+        json_data = response.json()
+        if json_data:
+            print("[{}] {}".format(json_data['id'], json_data['name']))
+        else:
+            print("No result")
+    except ValueError:
+        print("Not a valid JSON")
+
 if __name__ == "__main__":
-    # Check if a URL is provided as a command-line argument
-    if len(sys.argv) != 2:
-        print("Usage: {} <URL>".format(sys.argv[0]))
-        sys.exit(1)
-
-    url = sys.argv[1]
-    response = requests.get(url)
-
-    # Display the body of the response
-    print(response.text)
-
-    # Check if the HTTP status code is greater than or equal to 400
-    if response.status_code >= 400:
-        print("Error code: {}".format(response.status_code))
+    if len(sys.argv) == 2:
+        search_user(sys.argv[1])
+    else:
+        search_user("")
