@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     # Use a parameterized query to prevent SQL injection
     query = """
-        SELECT GROUP_CONCAT(name SEPARATOR ', ')
+        SELECT GROUP_CONCAT(cities.name SEPARATOR ', ')
         FROM cities
         JOIN states ON cities.state_id = states.id
         WHERE states.name = %s
