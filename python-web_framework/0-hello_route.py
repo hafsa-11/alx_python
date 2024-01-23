@@ -1,3 +1,15 @@
+"""
+0-hello_route.py
+~~~~~~~~~~~~~~~~
+A simple Flask web application with a single route.
+
+Routes:
+- /: Display "Hello HBNB!"
+
+Usage:
+python3 0-hello_route.py
+"""
+
 from flask import Flask
 
 # Create a Flask application
@@ -18,4 +30,3 @@ def hello_hbnb():
 if __name__ == '__main__':
     # Run the application on 0.0.0.0:5000 when the script is executed
     app.run(host='0.0.0.0', port=5000)
-
