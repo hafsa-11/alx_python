@@ -1,7 +1,7 @@
 """
 5-number_template.py
 ~~~~~~~~~~~~~~~~~~~~
-A Flask web application with multiple routes, URL converters, and template rendering.
+A Flask web application with multiple routes and template rendering.
 
 Routes:
 - /: Display "Hello HBNB!"
