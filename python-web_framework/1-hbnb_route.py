@@ -1,9 +1,21 @@
+"""
+1-hbnb_route.py
+~~~~~~~~~~~~~~~~~~~~~
+A simple Flask web application with two routes.
+
+Routes:
+- /: Display "Hello HBNB!"
+- /hbnb: Display "HBNB"
+
+Usage:
+python3 1-hbnb_route.py
+"""
+
 from flask import Flask
 
 # Create a Flask application
 app = Flask(__name__)
 
-# Define a route for the root URL ("/") with strict_slashes=False
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
     """
@@ -16,7 +28,6 @@ def hello_hbnb():
     """
     return 'Hello HBNB!'
 
-# Define a route for the "/hbnb" URL with strict_slashes=False
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
     """
