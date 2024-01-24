@@ -16,9 +16,10 @@ class User(db.Model):
 def add_user():
     if request.method == 'POST':
         try:
-            name = request.form['name']
-            email = request.form['email']
-            
+            # Retrieve name and email from the submitted form data
+            name = request.form.get('name')
+            email = request.form.get('email')
+
             new_user = User(name=name, email=email)
             db.session.add(new_user)
             db.session.commit()
