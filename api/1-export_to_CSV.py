@@ -1,7 +1,6 @@
 import csv
 import requests
 import sys
-import os
 
 def fetch_user_tasks(user_id):
     # Fetching tasks for the specified user
@@ -32,15 +31,7 @@ def main():
 
     tasks = fetch_user_tasks(user_id)
     export_to_csv(user_id, tasks)
-
-    # Verify the number of tasks in CSV
-    filename = f'{user_id}.csv'
-    if os.path.isfile(filename):
-        with open(filename, 'r') as f:
-            num_tasks = sum(1 for line in f) - 1  # excluding header
-        print(f"Number of tasks in CSV: {num_tasks}")
-    else:
-        print(f"Error: File {filename} not found.")
+    print(f"Tasks for user {user_id} exported to {user_id}.csv")
 
 if __name__ == "__main__":
     main()
